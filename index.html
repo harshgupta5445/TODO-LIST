@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;0,700;1,100;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+     
+</head>
+<body>
+    <div class="Background-image">
+        <img src="bg.jpg">
+    </div>
+    <div class="Container">
+        <div class="header">
+            <div class="Title">
+                    TODO LISTS
+            </div>    
+            <div class="theme">
+                <img src="sun.jpg">  
+            </div>    
+        </div>
+    </div>
+        <div class="newtodo">
+            <div class="check">
+                 <div class="checkmark">
+                </div>
+            </div>
+                <div class="newtodoinput">
+                    <form onsubmit="addItems(event)">
+                        <input id="todoinput" type="text" placeholder="Create a new todo...">
+                    </form>
+                </div>
+                <button type="button" class="btnbtnsuccess" id="addtaskbtn">
+                    Add Task
+                  </button>
+               
+        </div>
+
+        <div class="todoitemswrapper">
+            <div class="todoitems">
+                <div class="todoitem">
+                    <div class="check">
+                        <div class="checkmark">
+                            <img src="tick.png" height="16px" width="16px">
+                        </div>
+                    </div>
+                    <div class="todotext">
+                        Task1
+                    </div>
+                    
+                </div>
+
+                
+
+            </div>
+            <div class="todoitemsinfo">
+                <div class="itemsleft">
+                    1 Item left
+                </div>
+                <div class="itemsstatus">
+                    <span>All</span>
+                    <span>Active</span>
+                    <span>completed</span>
+                </div>
+                <div class="itemsclear">
+                    <span>Clear completed</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+   
+    
+    <script src="script.js"></script>
+</body>
+</html>

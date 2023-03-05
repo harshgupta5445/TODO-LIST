@@ -1,0 +1,215 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    font-size: 15px;
+    background-color: rgb(17, 10, 27);
+    justify-content: center;
+}
+
+.Background-image{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    max-height: 400px;
+    z-index: -1;
+}
+
+.Background-image img{
+    width: 2000px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.theme img{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(8, 8, 53);
+    
+    
+
+}
+.Container{
+    width: 650px;
+    margin: 2 40px;
+    max-width: 1000px;
+    margin-top: 90px;
+    
+
+}
+
+.header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.Title{
+    color: rgb(193, 219, 239);
+    font-size: 33px;
+    font-weight: bold;
+    letter-spacing: 6px;
+}
+
+.newtodo{
+    background-color: rgb(42, 42, 112);
+    width: 530px;
+    margin: 2 40px;
+    max-width: 1000px;
+    margin-top: 160px;
+    margin-left: -570px;
+    height: 50px;
+    display: flex;
+    border-radius: 25px;
+}
+
+.check{
+    background-color: rgba(42, 43, 120, 0.192);
+    width: 54px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.checkmark{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid rgb(45, 70, 118);
+    cursor: pointer;
+    transition: all 0.25s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(97, 104, 133);
+     
+}
+
+.checkmark:hover{
+    border-color: rgb(179, 198, 212);
+    background: rgb(205, 205, 221);
+}
+
+.newtodoinput{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    
+    
+
+
+}
+
+.newtodoinput form{
+    flex-grow: 1;
+   
+}
+
+.newtodoinput input{
+    width: 100%;
+    padding: 10px 0px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: hsl(219, 31%, 70%);
+    
+}
+
+.newtodoinput input::placeholder{
+    color: rgba(95, 95, 131, 0.789);
+
+}
+
+.todoitem{
+    width: 100%;
+    display: flex;
+    height: 60px; 
+    border-bottom: 5px solid rgb(31, 27, 67);
+    color: rgb(199, 216, 229);
+    font-size: 15px; 
+    align-items: center;
+    transition: all 0.25s ease;
+    cursor: pointer;
+
+}
+
+.todoitem:hover{
+   transform: translateY(-2px);
+   box-shadow: 0 0px 7px 0px rgb(112, 112, 196);
+}
+
+.todotext{
+    display: flex;
+    align-items: center;
+}
+
+.todoitemswrapper{
+  width: 480px;
+  margin-top: 255px; 
+  margin-left: -500px;
+  color: rgb(82, 82, 104);
+  background-color: rgb(45, 4, 101); 
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 2px 30px 0px rgb(51, 63, 85);
+
+}
+
+.todoitemsinfo{
+    width: 100%;
+    height: 60px;
+    color: rgb(87, 101, 113);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+}
+
+.itemsstatus{
+    display: flex;
+    justify-content: center;
+}
+
+.itemsstatus span{
+    padding: 0 4px;
+    cursor: pointer;
+}
+
+.itemsstatus:hover , .itemsclear:hover{
+    color: rgb(30, 30, 192);
+}
+
+.itemsclear{
+    cursor: pointer;
+    text-align: end;
+}
+
+.btnbtnsuccess{
+    background-color: transparent;
+    background: transparent;
+    border-radius: 25px;
+    border:transparent;
+    color: rgb(156, 179, 218);
+    margin-right: 20px; 
+}
+.delete{
+    background-color: transparent;
+    background: transparent;
+    border-radius: 100px;
+    border-color: rgb(45,70,118);
+    margin: 450px;
+    display: flex;
+    color: rgb(7, 20, 44);
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    
+
+}
